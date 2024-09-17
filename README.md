@@ -122,4 +122,4 @@ Bu proje, .NET Core 8 kullanarak temel bir Web API geliştirme, JWT ile kimlik d
 
   ## Link
 
-[Postman](https://api.postman.com/collections/25138324-605b99d5-9c2c-4450-a94d-b2e77035663e?access_key=PMAT-01J7XPZ9RXTBCYKRHC83NXT1XD)
+* [Postman](https://api.postman.com/collections/25138324-605b99d5-9c2c-4450-a94d-b2e77035663e?access_key=PMAT-01J7XPZ9RXTBCYKRHC83NXT1XD)
