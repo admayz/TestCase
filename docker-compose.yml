@@ -1,0 +1,22 @@
+version: '3.4'
+
+networks:
+    testcase-network: 
+
+services:
+  testcase:
+    container_name: test-case
+    image: ${DOCKER_REGISTRY-}testcase
+    build:
+      context: .
+      dockerfile: TestCase/Dockerfile
+    depends_on:
+      - testcase-sqlserver 
+  testcase-sqlserver:
+    container_name: test-case-sqlserver
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Password1*
+    ports:
+      - "1881:1433"
